@@ -1,3 +1,18 @@
+/*
+ *  # Google Search Plugin for CKEditor #
+ *
+ *  (C) Copyright Prafull Ranjan (all rights reserverd)
+ *  MIT License
+ *
+ *
+*/
+
+
+/*
+* A ckeditor plugin to add google search button for searching selected word
+* Use this plugin to extend ckeditor toolbar with the functionality of Google Search.
+*/
+
 CKEDITOR.plugins.add('search', {
     icons: 'search', // %REMOVE_LINE_CORE%
     init: function( editor ) {

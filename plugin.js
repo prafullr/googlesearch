@@ -13,8 +13,8 @@
 * Use this plugin to extend ckeditor toolbar with the functionality of Google Search.
 */
 
-CKEDITOR.plugins.add('search', {
-    icons: 'search', // %REMOVE_LINE_CORE%
+CKEDITOR.plugins.add('googlesearch', {
+    icons: 'googlesearch', // %REMOVE_LINE_CORE%
     init: function( editor ) {
         editor.addCommand( 'startSearch', {
             exec: function( editor ) {
@@ -24,11 +24,11 @@ CKEDITOR.plugins.add('search', {
             }
         });
         if ( editor.ui.addButton ) {
-            editor.ui.addButton( 'search', {
-                label: 'Search',
-                id: 'search',
+            editor.ui.addButton( 'googlesearch', {
+                label: 'Google Search',
+                id: 'googlesearch',
                 command: 'startSearch',
-                toolbar: 'search,10',
+                toolbar: 'googlesearch,10',
             } );
         }
     }
